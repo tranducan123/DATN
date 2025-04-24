@@ -1,0 +1,66 @@
+<!-- dialog.component.html -->
+<h1 mat-dialog-title>Thông tin kho</h1>
+<div mat-dialog-content>
+  <form>
+    <div class="row" style="margin-top:20px">
+      <div class="col-md-4 m-t-20">
+      <ejs-datepicker cssClass="e-outline" (valueChange)="
+  onInputChange({ key: 'CreatedAt', value: $event })"  name="createdat" [(value)]="wareHouseDetail.CreatedAt" format="dd/MM/yyyy" floatLabelType="Auto" rows="1" placeholder="Ngày nhập"></ejs-datepicker>
+      </div>
+      <div class="col-md-4 m-t-20">
+        <ejs-datepicker cssClass="e-outline" (valueChange)="onInputChange({ key: 'Billdate', value: $event })" name="createdat" [(value)]="wareHouseDetail.Billdate" format="dd/MM/yyyy" floatLabelType="Auto" rows="1" placeholder="Ngày hóa đơn"></ejs-datepicker>
+        </div>
+        <div class="col-md-4 m-t-20">
+          <ejs-textbox cssClass="e-outline" (valueChange)="onInputChange({ key: 'Billnumber', value: $event })" name="warehousename" [(value)]="wareHouseDetail.Billnumber" floatLabelType="Auto" placeholder="Số hóa đơn"></ejs-textbox>
+         </div>
+         <div class="col-md-3 m-t-20">
+           <ejs-dropdownlist cssClass="e-outline" (valueChange)="onInputChange({ key: 'Status', value: $event })" [(value)]="wareHouseDetail.Status" floatLabelType="Auto" rows="1" [fields]="field" [dataSource]="listStatus" placeholder="Trạng thái"></ejs-dropdownlist>
+         </div>
+
+         <div class="col-md-3 m-t-20">
+           <ejs-dropdownlist cssClass="e-outline" (valueChange)="onChange($event)" [(value)]="wareHouseDetail.DepartmentId" floatLabelType="Auto" rows="1" [fields]="fieldDepart" [dataSource]="listDepartment" placeholder="Phòng ban nhập kho"></ejs-dropdownlist>
+         </div>
+      <div class="col-md-3 m-t-20">
+        <ejs-dropdownlist cssClass="e-outline" (valueChange)="onInputChange({ key: 'Kho', value: $event })" [(value)]="wareHouseDetail.Kho" floatLabelType="Auto" rows="1" [fields]="fieldKho" [dataSource]="listKho" placeholder="Kho"></ejs-dropdownlist>
+      </div>
+      <div class="col-md-3 m-t-20">
+        <ejs-dropdownlist cssClass="e-outline" (valueChange)="onInputChange({ key: 'Createdby', value: $event })" [(value)]="wareHouseDetail.Createdby" floatLabelType="Auto" rows="1" [fields]="fieldUser" [dataSource]="listUser" placeholder="Người nhập kho"></ejs-dropdownlist>
+      </div>
+      <div class="col-md-4 m-t-20">
+        <ejs-textbox cssClass="e-outline" name="sip" (valueChange)="onInputChange({ key: 'Supplier', value: $event })" [(value)]="wareHouseDetail.Supplier" floatLabelType="Auto" placeholder="Tên nhà cung cấp"></ejs-textbox>
+       </div>
+       <div class="col-md-4 m-t-20">
+        <ejs-textbox cssClass="e-outline" name="na" (valueChange)="onInputChange({ key: 'Handoverrepresentative', value: $event })" [(value)]="wareHouseDetail.Handoverrepresentative" floatLabelType="Auto" placeholder="Đại diện bên bàn giao"></ejs-textbox>
+       </div>
+       <div class="col-md-4 m-t-20">
+        <ejs-textbox cssClass="e-outline" (valueChange)="onInputChange({ key: 'Reason', value: $event })" name="reason" [(value)]="wareHouseDetail.Reason" floatLabelType="Auto" placeholder="Lý do nhập kho"></ejs-textbox>
+       </div>
+       <div class="col-md-12 m-t-20">
+        <ejs-textbox cssClass="e-outline" (valueChange)="onInputChange({ key: 'Notes', value: $event })" name="note" [(value)]="wareHouseDetail.Notes" floatLabelType="Auto" placeholder="Ghi chú"></ejs-textbox>
+       </div>
+    </div>
+  </form>
+  <ejs-grid
+  [dataSource]="listDetail"
+  >
+  <e-columns>
+    <e-column field="MaterialId" headerText="Mã sản phẩm"></e-column>
+
+    <e-column field="Material.MaterialName" headerText="Tên sản phẩm"></e-column>
+
+    <e-column field="Material.Measure" headerText="DVT"></e-column>
+
+    <e-column field="SltheoCt" headerText="SL theo CT"></e-column>
+    <e-column field="Slthuc" headerText="SL thực"></e-column>
+    <e-column field="DonGia" headerText="Đơn Giá"></e-column>
+    <e-column field="MaLo" headerText="Mã lô"></e-column>
+    <e-column field="ThanhTien" headerText="Thành tiền"></e-column>
+
+
+  </e-columns>
+</ejs-grid>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Hủy</button>
+  <button mat-button (click)="onSave()">Lưu</button>
+</div>

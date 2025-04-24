@@ -1,0 +1,95 @@
+<ejs-grid [dataSource]="listMaterial"
+[toolbar]="toolbarOptions"
+  [allowTextWrap]="true"
+  [editSettings]="editSettings"
+  width="100%"
+  [allowPaging]="true"
+  [pageSettings]="pageSettings"
+  (actionBegin)="actionBegin($event)"
+  (actionComplete)="actionComplete($event)"
+  [allowSorting]="true"
+  height="455">
+<e-columns>
+  <e-column field="MaterialName" headerText="Tên danh mục">
+    <ng-template #editTemplate let-data>
+      <ejs-textbox
+        [value]="data?.MaterialName"
+        (valueChange)="
+      onInputChange({ key: 'MaterialName', value: $event })"
+        cssClass="e-outline"
+
+        placeholder="Tên danh mục"
+      >
+      </ejs-textbox>
+    </ng-template>
+  </e-column>
+  <e-column field="Price" headerText="Giá" format="#,##0">
+    <ng-template #editTemplate let-data>
+      <ejs-textbox
+        [value]="data?.Price"
+        type="number"
+        format="#,##0"
+        (valueChange)="
+      onInputChange({ key: 'Price', value: $event })"
+        cssClass="e-outline"
+
+        placeholder="Giá"
+      >
+      </ejs-textbox>
+    </ng-template>
+  </e-column>
+ <e-column field="StockQuantity" headerText="Số lượng">
+  <ng-template #editTemplate let-data>
+    <ejs-textbox
+      [value]="data?.StockQuantity"
+      type="number"
+      (valueChange)="
+    onInputChange({ key: 'StockQuantity', value: $event })"
+      cssClass="e-outline"
+
+      placeholder="Số lượng"
+    >
+    </ejs-textbox>
+  </ng-template>
+ </e-column>
+ <e-column field="Unit" headerText="Đơn vị tính">
+  <ng-template #editTemplate let-data>
+    <ejs-textbox
+      [value]="data?.Unit"
+      (valueChange)="
+    onInputChange({ key: 'Unit', value: $event })"
+      cssClass="e-outline"
+
+      placeholder="Đơn vị tính"
+    >
+    </ejs-textbox>
+  </ng-template>
+ </e-column>
+ <e-column field="Category.CategoryName" headerText="Loại sản phẩm">
+  <ng-template #editTemplate let-data>
+    <ejs-dropdownlist
+  cssClass="e-outline"
+  [dataSource]="listCategory"
+  placeholder="Loại sản phẩm"
+  [value]="data.CategoryId"
+  (valueChange)="
+  onInputChange({ key: 'CategoryId', value: $event })"
+  [fields]="field">
+  </ejs-dropdownlist>
+  </ng-template>
+ </e-column>
+ <e-column field="Department.DepartmentName" headerText="Phòng ban mua sắm">
+  <ng-template #editTemplate let-data>
+    <ejs-dropdownlist
+  cssClass="e-outline"
+  [dataSource]="listDepartment"
+  placeholder="Loại sản phẩm"
+  [value]="data.DepartmentId"
+  (valueChange)="
+  onInputChange({ key: 'DepartmentId', value: $event })"
+  [fields]="fielddept">
+  </ejs-dropdownlist>
+  </ng-template>
+ </e-column>
+</e-columns>
+</ejs-grid>

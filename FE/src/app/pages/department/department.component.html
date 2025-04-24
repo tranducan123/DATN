@@ -1,0 +1,53 @@
+<ejs-grid
+  #grid
+  [dataSource]="listDepartment"
+  [toolbar]="toolbarOptions"
+  [allowTextWrap]="true"
+  [editSettings]="editSettings"
+  width="100%"
+  [allowPaging]="true"
+  [pageSettings]="pageSettings"
+  (actionBegin)="actionBegin($event)"
+  (actionComplete)="actionComplete($event)"
+  [allowSorting]="true"
+  height="455"
+>
+  <e-columns>
+    <e-column field="DepartmentName" headerText="DepartmentName"
+>
+<ng-template #editTemplate let-data>
+  <ejs-textbox
+    [value]="data?.DepartmentName"
+    (valueChange)="
+  onInputChange({ key: 'DepartmentName', value: $event })"
+    cssClass="e-outline"
+    
+    placeholder="Tên phòng ban"
+  >
+  </ejs-textbox>
+</ng-template>
+</e-column>
+<e-column field="Role" headerText="Role"
+>
+<ng-template #editTemplate let-data>  
+  <ejs-dropdownlist
+  cssClass="e-outline"
+  [dataSource]="documentType"
+  placeholder="Quyền"
+  [value]="data.Role"
+  (valueChange)="
+  onInputChange({ key: 'Role', value: $event })"
+  [fields]="field">
+  </ejs-dropdownlist>
+</ng-template>
+</e-column>
+<e-column field="CreatedAt" headerText="CreatedAt"
+editType="datepickeredit"
+cssClass="e-outline"
+format="MM/dd/yyyy"
+>
+<ng-template #editTemplate let-data></ng-template>
+</e-column>
+
+  </e-columns>
+</ejs-grid>

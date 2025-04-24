@@ -1,0 +1,171 @@
+<ejs-grid [dataSource]="listRequest"
+          [toolbar]="toolbarOptions"
+          [allowTextWrap]="true"
+          [editSettings]="editSettings"
+          width="100%" 
+(recordClick)="recordClick($event)"
+          [allowPaging]="true"
+          [pageSettings]="pageSettings"
+          (actionBegin)="actionBegin($event)"
+          (actionComplete)="actionComplete($event)"
+          [allowSorting]="true"
+          height="200">
+  <e-columns>
+    <e-column field="RequestDate" headerText="Ngày yêu cầu">
+      <ng-template #template let-data>
+        {{data.RequestDate | date: 'dd/MM/yyyy'}}
+      </ng-template>
+    </e-column>
+    <e-column field="RequestId" headerText="Mã phiếu">
+      <ng-template #template let-data>
+        {{data.RequestId}}
+      </ng-template>
+    </e-column>
+    <e-column field="Status" headerText="Trạng thái">
+      <ng-template #template let-data>
+        <span class="bg-light-warning text-success rounded f-w-600 p-6 p-y-4 f-s-12" *ngIf="data.Status == 'PENDING'">Chờ tổng hợp</span>
+        <span class="bg-light-primary text-ellipsis rounded f-w-600 p-6 p-y-4 f-s-12" *ngIf="data.Status == 'REJECTED'">Đang tổng hợp</span>
+        <span class="bg-light-secondary text-error rounded f-w-600 p-6 p-y-4 f-s-12" *ngIf="data.Status == 'COMPLETED'">Đã tổng hợp</span>
+      </ng-template>
+    </e-column>
+    <e-column field="Department.DepartmentName" headerText="Phòng ban yêu cầu"></e-column>
+    <e-column field="DepartmentReceive.DepartmentName" headerText="Phòng ban tiếp nhận & đánh giá" width="250px"></e-column>
+  </e-columns>
+</ejs-grid>
+
+<div #container class="root-container"></div>
+<ejs-dialog #dialog [height]="selectedRequest.RequestId ? '500px' : '300px'"  [width]="'800px'" [header]="'Thông tin'" [isModal]="true" [target]="targetElement" [visible]="false" cssClass="custom-dialog">
+  <div class="card">
+    <div class="card-body">
+      <div class="row" style="margin-top:10px;">
+        <div class="col-4">
+          <ejs-datepicker cssClass="e-outline" [(ngModel)]="selectedRequest.RequestDate" format="dd/MM/yyyy" floatLabelType="Auto" rows="1" placeholder="Ngày yêu cầu" (valueChange)="
+  onInputChange({ key: 'RequestDate', value: $event })"></ejs-datepicker>
+        </div>
+        <div class="col-4">
+          <ejs-dropdownlist id='ddlelement' [disabled]="!selectedRequest.RequestId"  #ddlelement cssClass="e-outline" [(ngModel)]="selectedRequest.Status" floatLabelType="Auto" rows="1" [fields]="field" [dataSource]="listStatus" (valueChange)="
+  onInputChange({ key: 'Status', value: $event })" placeholder="Trạng thái"></ejs-dropdownlist>
+        </div>
+        <div class="col-4">
+          <ejs-dropdownlist id='ddlelement1'  #ddlelement1 cssClass="e-outline" [(ngModel)]="selectedRequest.DepartmentId" floatLabelType="Auto" rows="1" [fields]="fields" (valueChange)="onInputChange({ key: 'DepartmentId', value: $event })" [dataSource]="listDepartment" placeholder="Phòng ban yêu cầu"></ejs-dropdownlist>
+        </div>
+        <div class="col-6" style="margin-top:10px">
+          <ejs-textbox cssClass="e-outline" (valueChange)="onInputChange({ key: 'Notes', value: $event })" [(ngModel)]="selectedRequest.Notes" placeholder="Ghi chú" floatLabelType="Auto"></ejs-textbox>
+        </div>
+        <div class="col-6" style="margin-top:10px">
+          <ejs-dropdownlist id='ddlelement2'  #ddlelement2 cssClass="e-outline" [(ngModel)]="selectedRequest.DepartmentReceiveId" floatLabelType="Auto" rows="1" [fields]="fields" [dataSource]="listDepartment" (valueChange)="onInputChange({ key: 'DepartmentReceiveId', value: $event })" placeholder="Phòng ban tiếp nhận & đánh giá"></ejs-dropdownlist>
+        </div>
+      </div>
+  <div style="margin-top:25px" *ngIf="selectedRequest.RequestId">
+    <ejs-grid [dataSource]="requestDetail"
+    [toolbar]="toolbarOptions"
+    [allowTextWrap]="true"
+    [editSettings]="editSettings2"
+    width="100%"
+    [allowPaging]="true"
+    (actionBegin)="actionBeginMaterial($event)"
+    [pageSettings]="pageSettings"
+    [allowSorting]="true"
+    height="255">
+      <e-columns>
+        <e-column field="MaterialId" headerText="Sản phẩm">
+          <ng-template #template let-data>
+            {{data.Material.MaterialName}}
+          </ng-template>
+         <ng-template #editTemplate let-data>
+          <ejs-dropdownlist 
+          cssClass="e-outline" 
+          (valueChange)="onInputChangeMaterial({ key: 'MaterialId', value: $event })"
+          placeholder="Sản phẩm"
+          [dataSource]="listMaterial"
+          [fields]="fieldMaterial"
+          [value]="data.MaterialId"
+          allowFiltering="true" 
+          filterBarPlaceholder="Tìm kiếm sản phẩm..."  
+          [filterType]="'Contains'" 
+        ></ejs-dropdownlist>
+        
+         </ng-template>
+        </e-column>
+        <e-column field="MaterialText" headerText="Tên thay thế">
+          <ng-template #editTemplate let-data>
+            <ejs-textbox cssClass="e-outline" (valueChange)="onInputChangeMaterial({ key: 'MaterialText', value: $event })" floatLabelType="Auto" placeholder="Tên sản phẩm" [value]="data.MaterialText"></ejs-textbox>
+          </ng-template>
+        </e-column>
+        <e-column field="Quantity" headerText="Số lượng">
+          <ng-template #editTemplate let-data>
+            <ejs-textbox cssClass="e-outline" type="number"  (valueChange)="onInputChangeMaterial({ key: 'Quantity', value: $event })" floatLabelType="Auto" placeholder="Số lượng" [value]="data.Quantity"></ejs-textbox>
+          </ng-template>
+        </e-column>
+        <e-column field="Request.Department.DepartmentName" headerText="Phòng ban đề xuất">
+          <ng-template #editTemplate let-data>
+          </ng-template>
+        </e-column>
+        <e-column field="Measure" headerText="Đơn Vị Tính">
+          <ng-template #editTemplate let-data>
+            <ejs-textbox cssClass="e-outline"  (valueChange)="onInputChangeMaterial({ key: 'Measure', value: $event })" floatLabelType="Auto" placeholder="Đơn Vị Tính" [value]="data.Measure"></ejs-textbox>
+          </ng-template>
+        </e-column>
+    
+        <e-column field="Note" headerText="Ghi Chú">
+          <ng-template #editTemplate let-data>
+            <ejs-textbox cssClass="e-outline" (valueChange)="onInputChangeMaterial({ key: 'Note', value: $event })" floatLabelType="Auto" placeholder="Ghi Chú" [value]="data.Note"></ejs-textbox>
+          </ng-template>
+        </e-column>
+      </e-columns>
+    </ejs-grid>
+   
+  </div>
+    </div>
+   
+  </div>
+  <div class="button-container">
+    <button mat-flat-button class="bg-success text-white" (click)="onSave()">
+      <span>Lưu</span>
+    </button>
+    <button mat-flat-button class="bg-light-secondary text-white" (click)="onCancel()">
+      <span>Hủy</span>
+    </button>
+  </div>
+</ejs-dialog>
+<ejs-grid [dataSource]="requestDetail"
+[allowTextWrap]="true"
+width="100%"
+[allowPaging]="true"
+[pageSettings]="pageSettings"
+[allowSorting]="true"
+height="255">
+  <e-columns>
+    <e-column field="MaterialId" headerText="Sản phẩm">
+      <ng-template #template let-data>
+        {{data.Material.MaterialName}}
+      </ng-template>
+     <ng-template #editTemplate let-data>
+      <ejs-dropdownlist cssClass="e-outline" (valueChange)="onInputChangeMaterial({ key: 'MaterialId', value: $event })" placeholder="Sản phẩm" [dataSource]="listMaterial" [fields]="fieldMaterial" [value]="data.MaterialId"></ejs-dropdownlist>
+     </ng-template>
+    </e-column>
+    <e-column field="MaterialText" headerText="Tên sản phẩm">
+      <ng-template #editTemplate let-data>
+        <ejs-textbox cssClass="e-outline" (valueChange)="onInputChangeMaterial({ key: 'MaterialText', value: $event })" floatLabelType="Auto" placeholder="Tên sản phẩm" [value]="data.MaterialText"></ejs-textbox>
+      </ng-template>
+    </e-column>
+    <e-column field="Quantity" headerText="Số lượng">
+      <ng-template #editTemplate let-data>
+        <ejs-textbox cssClass="e-outline" type="number"  (valueChange)="onInputChangeMaterial({ key: 'Quantity', value: $event })" floatLabelType="Auto" placeholder="Số lượng" [value]="data.Quantity"></ejs-textbox>
+      </ng-template>
+    </e-column>
+    <e-column field="Request.Department.DepartmentName" headerText="Phòng ban đề xuất">
+      <ng-template #editTemplate let-data>
+      </ng-template>
+    </e-column>
+
+    <e-column field="Measure" headerText="Đơn Vị Tính">
+     
+    </e-column>
+
+    <e-column field="Note" headerText="Ghi Chú">
+    
+    </e-column>
+    
+  </e-columns>
+</ejs-grid>

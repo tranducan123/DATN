@@ -1,0 +1,111 @@
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.btn-primary {
+  margin-top: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+.no-bullets {
+  list-style: none;
+  padding-left: 0; /* Bỏ khoảng cách thụt lề */
+}
+
+.label-custom {
+  font-weight: bold;
+}
+.e-toolbar .e-toolbar-items {
+
+  height: 10px !important;
+
+}
+.e-toolbar {
+
+  height: 10px !important;
+
+}
+.e-toolbar .e-toolbar-items .e-toolbar-item {
+
+  height: 10px !important;
+
+
+}
+:host {
+::ng-deep .ng2-smart-sort-link,
+::ng-deep .ng2-smart-title {
+   font-weight: 700 !important;
+   color: black !important;
+}
+}
+
+
+.e-grid .e-row:hover .e-rowcell {
+background-color: rgb(204, 229, 255) !important;
+}
+.e-grid .e-rowcell.e-selectionbackground {
+background-color: rgb(230, 230, 250);
+}
+.e-grid .e-row.e-altrow {
+background-color: rgb(150, 212, 212);
+}
+.e-grid .e-row {
+background-color: rgb(180, 180, 180);
+}
+
+
+.e-grid .e-headertext{
+font-weight: bold;
+font-size: 13px;
+}
+:host ::ng-deep {
+.e-grid {
+  .e-gridheader {
+    font-size: 26px;
+    .e-headerrow {
+      &:nth-child(odd) {
+        background-color: #f4fbfb !important;
+
+      }
+
+      &:nth-child(even) {
+        background-color: #ffffff !important;
+      }
+    }
+  }
+
+  .e-row {
+    &:nth-child(odd) {
+      background-color: #f4fbfb !important;
+    }
+
+    &:nth-child(even) {
+      background-color: #ffffff !important;
+    }
+  }
+}
+}
+
+
+:host ::ng-deep .e-datepicker .e-input-group input {
+text-align: center;
+}
+// :host ::ng-deep .e-dropdownlist .e-input-group input {
+//   text-align: center;
+// }
+
+
+.e-class.e-dropdownlist .e-input-group input {
+text-align: center;
+}
+
+
+.grid-with-shadow {
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+border-radius: 8px;
+overflow: hidden;
+}

@@ -1,0 +1,30 @@
+.custom-dialog .e-dialog-header {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .custom-dialog .e-dialog-content {
+    padding: 20px;
+  }
+  
+  .custom-dialog .e-dialog-footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .custom-dialog .card-body {
+    position: relative;
+  }
+  
+  .button-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .button-container button {
+    padding: 8px 16px;  /* Tùy chỉnh kích thước nút nếu cần */
+  }
+  
