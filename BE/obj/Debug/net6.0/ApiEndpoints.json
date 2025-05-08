@@ -1,0 +1,3054 @@
+[
+  {
+    "ContainingType": "Microsoft.AspNetCore.OData.Routing.Controllers.MetadataController",
+    "Method": "GetServiceDocument",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.OData.ODataServiceDocument",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": ""
+  },
+  {
+    "ContainingType": "Microsoft.AspNetCore.OData.Routing.Controllers.MetadataController",
+    "Method": "GetMetadata",
+    "RelativePath": "$metadata",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.OData.Edm.IEdmModel",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "$metadata"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.CustomController",
+    "Method": "Login",
+    "RelativePath": "Authentication/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userLogin",
+        "Type": "MaterialManagement.Controllers.Helper.UserLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Category, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Categories"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Category, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "Categories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "MaterialManagement.Models.Category",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Categories"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Category, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Categories({key})",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Categories({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Category, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Categories({key})",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Category, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Categories({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Category, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Categories({key})",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Category, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Categories({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Category, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Categories({key})",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Categories({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Category, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Categories/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Categories/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Category, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Categories/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Category, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Categories/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Category, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Categories/{key}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Category, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Categories/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Category, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Categories/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Categories/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Category, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Categories/$count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Categories/$count"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Commoncategory, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Commoncategories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Commoncategories"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Commoncategory, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "Commoncategories",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "MaterialManagement.Models.Commoncategory",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Commoncategories"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Commoncategory, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Commoncategories({key})",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Commoncategories({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Commoncategory, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Commoncategories({key})",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Commoncategory, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Commoncategories({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Commoncategory, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Commoncategories({key})",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Commoncategory, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Commoncategories({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Commoncategory, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Commoncategories({key})",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Commoncategories({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Commoncategory, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Commoncategories/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Commoncategories/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Commoncategory, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Commoncategories/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Commoncategory, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Commoncategories/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Commoncategory, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Commoncategories/{key}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Commoncategory, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Commoncategories/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Commoncategory, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Commoncategories/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Commoncategories/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Commoncategory, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Commoncategories/$count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Commoncategories/$count"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Department, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Departments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Departments"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Department, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "Departments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "MaterialManagement.Models.Department",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Departments"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Department, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Departments({key})",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Departments({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Department, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Departments({key})",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Department, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Departments({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Department, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Departments({key})",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Department, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Departments({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Department, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Departments({key})",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Departments({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Department, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Departments/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Departments/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Department, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Departments/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Department, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Departments/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Department, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Departments/{key}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Department, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Departments/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Department, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Departments/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Departments/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Department, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Departments/$count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Departments/$count"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.InventoryTransaction, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "InventoryTransactions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "InventoryTransactions"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.InventoryTransaction, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "InventoryTransactions",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "MaterialManagement.Models.InventoryTransaction",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "InventoryTransactions"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.InventoryTransaction, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "InventoryTransactions({key})",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "InventoryTransactions({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.InventoryTransaction, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "InventoryTransactions({key})",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.InventoryTransaction, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "InventoryTransactions({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.InventoryTransaction, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "InventoryTransactions({key})",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.InventoryTransaction, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "InventoryTransactions({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.InventoryTransaction, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "InventoryTransactions({key})",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "InventoryTransactions({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.InventoryTransaction, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "InventoryTransactions/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "InventoryTransactions/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.InventoryTransaction, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "InventoryTransactions/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.InventoryTransaction, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "InventoryTransactions/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.InventoryTransaction, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "InventoryTransactions/{key}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.InventoryTransaction, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "InventoryTransactions/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.InventoryTransaction, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "InventoryTransactions/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "InventoryTransactions/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.InventoryTransaction, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "InventoryTransactions/$count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "InventoryTransactions/$count"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Material, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Materials",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Materials"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Material, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "Materials",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "MaterialManagement.Models.Material",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Materials"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Material, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Materials({key})",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Materials({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Material, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Materials({key})",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Material, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Materials({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Material, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Materials({key})",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Material, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Materials({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Material, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Materials({key})",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Materials({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Material, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Materials/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Materials/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Material, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Materials/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Material, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Materials/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Material, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Materials/{key}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Material, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Materials/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Material, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Materials/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Materials/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Material, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Materials/$count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Materials/$count"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.OrderDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "OrderDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "OrderDetails"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.OrderDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "OrderDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "MaterialManagement.Models.OrderDetail",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "OrderDetails"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.OrderDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "OrderDetails({key})",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "OrderDetails({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.OrderDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "OrderDetails({key})",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.OrderDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "OrderDetails({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.OrderDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "OrderDetails({key})",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.OrderDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "OrderDetails({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.OrderDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "OrderDetails({key})",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "OrderDetails({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.OrderDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "OrderDetails/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "OrderDetails/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.OrderDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "OrderDetails/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.OrderDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "OrderDetails/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.OrderDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "OrderDetails/{key}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.OrderDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "OrderDetails/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.OrderDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "OrderDetails/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "OrderDetails/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.OrderDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "OrderDetails/$count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "OrderDetails/$count"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Order, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Orders",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Orders"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Order, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "Orders",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "MaterialManagement.Models.Order",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Orders"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Order, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Orders({key})",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Orders({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Order, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Orders({key})",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Order, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Orders({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Order, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Orders({key})",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Order, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Orders({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Order, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Orders({key})",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Orders({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Order, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Orders/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Orders/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Order, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Orders/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Order, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Orders/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Order, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Orders/{key}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Order, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Orders/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Order, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Orders/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Orders/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Order, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Orders/$count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Orders/$count"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.RequestDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "RequestDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "RequestDetails"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.RequestDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "RequestDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "MaterialManagement.Models.RequestDetail",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "RequestDetails"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.RequestDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "RequestDetails({key})",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "RequestDetails({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.RequestDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "RequestDetails({key})",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.RequestDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "RequestDetails({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.RequestDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "RequestDetails({key})",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.RequestDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "RequestDetails({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.RequestDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "RequestDetails({key})",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "RequestDetails({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.RequestDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "RequestDetails/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "RequestDetails/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.RequestDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "RequestDetails/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.RequestDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "RequestDetails/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.RequestDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "RequestDetails/{key}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.RequestDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "RequestDetails/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.RequestDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "RequestDetails/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "RequestDetails/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.RequestDetail, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "RequestDetails/$count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "RequestDetails/$count"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Request, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Requests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Requests"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Request, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "Requests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "MaterialManagement.Models.Request",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Requests"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Request, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Requests({key})",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Requests({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Request, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Requests({key})",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Request, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Requests({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Request, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Requests({key})",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Request, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Requests({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Request, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Requests({key})",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Requests({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Request, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Requests/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Requests/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Request, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Requests/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Request, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Requests/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Request, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Requests/{key}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Request, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Requests/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Request, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Requests/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Requests/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Request, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Requests/$count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Requests/$count"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Role, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Roles"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Role, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "Roles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "MaterialManagement.Models.Role",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Roles"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Role, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Roles({key})",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Roles({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Role, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Roles({key})",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Role, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Roles({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Role, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Roles({key})",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Role, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Roles({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Role, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Roles({key})",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Roles({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Role, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Roles/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Roles/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Role, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Roles/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Role, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Roles/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Role, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Roles/{key}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Role, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Roles/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Role, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Roles/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Roles/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Role, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Roles/$count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Roles/$count"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Supplier, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Suppliers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Suppliers"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Supplier, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "Suppliers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "MaterialManagement.Models.Supplier",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Suppliers"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Supplier, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Suppliers({key})",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Suppliers({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Supplier, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Suppliers({key})",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Supplier, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Suppliers({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Supplier, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Suppliers({key})",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Supplier, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Suppliers({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Supplier, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Suppliers({key})",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Suppliers({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Supplier, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Suppliers/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Suppliers/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Supplier, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Suppliers/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Supplier, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Suppliers/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Supplier, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Suppliers/{key}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Supplier, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Suppliers/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Supplier, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Suppliers/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Suppliers/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Supplier, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Suppliers/$count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Suppliers/$count"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.UserRole, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "UserRoles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "UserRoles"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.UserRole, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "UserRoles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "MaterialManagement.Models.UserRole",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "UserRoles"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.UserRole, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "UserRoles({key})",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "UserRoles({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.UserRole, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "UserRoles({key})",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.UserRole, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "UserRoles({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.UserRole, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "UserRoles({key})",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.UserRole, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "UserRoles({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.UserRole, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "UserRoles({key})",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "UserRoles({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.UserRole, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "UserRoles/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "UserRoles/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.UserRole, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "UserRoles/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.UserRole, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "UserRoles/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.UserRole, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "UserRoles/{key}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.UserRole, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "UserRoles/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.UserRole, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "UserRoles/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "UserRoles/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.UserRole, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "UserRoles/$count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "UserRoles/$count"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.User, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Users"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.User, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "Users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "MaterialManagement.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Users"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.User, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Users({key})",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Users({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.User, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Users({key})",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.User, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Users({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.User, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Users({key})",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.User, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Users({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.User, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Users({key})",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Users({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.User, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Users/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Users/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.User, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Users/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.User, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Users/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.User, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Users/{key}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.User, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Users/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.User, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Users/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Users/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.User, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Users/$count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Users/$count"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.WarehouseReport, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "WarehouseReports",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "WarehouseReports"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.WarehouseReport, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "WarehouseReports",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "MaterialManagement.Models.WarehouseReport",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "WarehouseReports"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.WarehouseReport, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "WarehouseReports({key})",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "WarehouseReports({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.WarehouseReport, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "WarehouseReports({key})",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.WarehouseReport, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "WarehouseReports({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.WarehouseReport, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "WarehouseReports({key})",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.WarehouseReport, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "WarehouseReports({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.WarehouseReport, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "WarehouseReports({key})",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "WarehouseReports({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.WarehouseReport, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "WarehouseReports/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "WarehouseReports/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.WarehouseReport, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "WarehouseReports/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.WarehouseReport, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "WarehouseReports/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.WarehouseReport, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "WarehouseReports/{key}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.WarehouseReport, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "WarehouseReports/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.WarehouseReport, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "WarehouseReports/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "WarehouseReports/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.WarehouseReport, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "WarehouseReports/$count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "WarehouseReports/$count"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Warehouse, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Warehouses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Warehouses"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Warehouse, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Post",
+    "RelativePath": "Warehouses",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entity",
+        "Type": "MaterialManagement.Models.Warehouse",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Warehouses"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Warehouse, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Warehouses({key})",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Warehouses({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Warehouse, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Warehouses({key})",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Warehouse, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Warehouses({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Warehouse, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Warehouses({key})",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Warehouse, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Warehouses({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Warehouse, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Warehouses({key})",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Warehouses({key})"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Warehouse, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Warehouses/{key}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Warehouses/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Warehouse, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Put",
+    "RelativePath": "Warehouses/{key}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Warehouse, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Warehouses/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Warehouse, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Patch",
+    "RelativePath": "Warehouses/{key}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "entity",
+        "Type": "Microsoft.AspNetCore.OData.Deltas.Delta\u00601[[MaterialManagement.Models.Warehouse, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Warehouses/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Warehouse, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Delete",
+    "RelativePath": "Warehouses/{key}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "Warehouses/{key}"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.BaseController\u00601[[MaterialManagement.Models.Warehouse, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+    "Method": "Get",
+    "RelativePath": "Warehouses/$count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [],
+    "EndpointName": "Warehouses/$count"
+  },
+  {
+    "ContainingType": "MaterialManagement.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[MaterialManagement.WeatherForecast, MaterialManagement, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "application/json;odata.metadata=minimal;odata.streaming=true",
+          "application/json;odata.metadata=minimal;odata.streaming=false",
+          "application/json;odata.metadata=minimal",
+          "application/json;odata.metadata=full;odata.streaming=true",
+          "application/json;odata.metadata=full;odata.streaming=false",
+          "application/json;odata.metadata=full",
+          "application/json;odata.metadata=none;odata.streaming=true",
+          "application/json;odata.metadata=none;odata.streaming=false",
+          "application/json;odata.metadata=none",
+          "application/json;odata.streaming=true",
+          "application/json;odata.streaming=false",
+          "application/json",
+          "application/xml",
+          "application/json",
+          "text/plain",
+          "application/octet-stream",
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

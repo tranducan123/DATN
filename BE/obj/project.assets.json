@@ -2831,11 +2831,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Desktop\\New folder (2)\\materialmanagement-main\\BE\\MaterialManagement.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Desktop\\New folder (2)\\DATN\\BE\\MaterialManagement.csproj",
       "projectName": "MaterialManagement",
-      "projectPath": "C:\\Users\\admin\\Desktop\\New folder (2)\\materialmanagement-main\\BE\\MaterialManagement.csproj",
+      "projectPath": "C:\\Users\\admin\\Desktop\\New folder (2)\\DATN\\BE\\MaterialManagement.csproj",
       "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Desktop\\New folder (2)\\materialmanagement-main\\BE\\obj\\",
+      "outputPath": "C:\\Users\\admin\\Desktop\\New folder (2)\\DATN\\BE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

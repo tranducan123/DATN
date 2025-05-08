@@ -33,6 +33,7 @@ namespace MaterialManagement.Services.Impl
                 username = user.Username,
                 fullname = user.FullName,
                 userid = user.UserId,
+                status=user.Status,
                 email = user.Email,
                 roles = user.UserRoles!=null ? user.UserRoles.Select(c => new { c.Role.RoleId, c.Role.RoleName }).ToList() : null,
                 //depart = user.Depart!=null ? new { name = user.Depart.Name, description = user.Depart.Description, id = user.Depart.Id } : null,

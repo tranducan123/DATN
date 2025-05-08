@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LdIR29CofB4=",
+  "dgSpecHash": "NlJGHUS7ED8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\Desktop\\New folder (2)\\materialmanagement-main\\BE\\MaterialManagement.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Desktop\\New folder (2)\\DATN\\BE\\MaterialManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\6.0.23\\microsoft.aspnetcore.authentication.jwtbearer.6.0.23.nupkg.sha512",

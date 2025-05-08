@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "WzuyHlDk+UO4nl8vBybp3rpXanVIW0pbckxub4GjLzI=",
+  "Hash": "PPp3yVaroSm3cuxfWMOUmsDeqNWxUO6OP9Rsr19eyDc=",
   "Source": "MaterialManagement",
   "BasePath": "_content/MaterialManagement",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }
